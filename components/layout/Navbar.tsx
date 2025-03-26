@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ShoppingCart, User, LogOut } from "lucide-react";
 import { signOut, useSession } from "next-auth/react";
-import { cn } from "@/lib/Utils";
+import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/context/CartContext";
 import {
