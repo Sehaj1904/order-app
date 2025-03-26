@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { useCart } from "@/context/CartContext"
-import { formatPrice } from "@/lib/Utils"
+import { formatPrice } from "@/lib/utils"
 
 export default function CartSummary() {
   const { items } = useCart()
