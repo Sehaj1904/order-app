@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import ProductCard from "@/components/products/ProductCard"
-import { getFeaturedProducts } from "@/lib/Products"
+import { getFeaturedProducts } from "@/lib/products"
 
 export default async function FeaturedProducts() {
   const featuredProducts = await getFeaturedProducts()
