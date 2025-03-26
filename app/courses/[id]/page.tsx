@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import CourseDetails from "@/components/courses/CourseDetails";
-import { getCourseById, getAllCourses } from "@/lib/Courses";
+import { getCourseById, getAllCourses } from "@/lib/courses";
 
 interface CoursePageProps {
   params: {
