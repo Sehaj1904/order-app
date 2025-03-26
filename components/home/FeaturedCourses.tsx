@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import CourseCard from "@/components/courses/CourseCard"
-import { getFeaturedCourses } from "@/lib/Courses"
+import { getFeaturedCourses } from "@/lib/courses"
 
 export default async function FeaturedCourses() {
   const featuredCourses = await getFeaturedCourses()
