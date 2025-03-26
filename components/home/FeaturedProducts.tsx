@@ -1,0 +1,27 @@
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
+import ProductCard from "@/components/products/ProductCard"
+import { getFeaturedProducts } from "@/lib/Products"
+
+export default async function FeaturedProducts() {
+  const featuredProducts = await getFeaturedProducts()
+
+  return (
+    <section className="container px-4 md:px-6">
+      <div className="flex flex-col gap-6">
+        <div className="flex items-center justify-between">
+          <h2 className="text-2xl font-bold tracking-tight">Featured Products</h2>
+          <Link href="/products" className="flex items-center gap-1 text-sm font-medium text-primary">
+            View all <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {featuredProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
