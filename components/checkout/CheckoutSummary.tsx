@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
-import { formatPrice } from "@/lib/Utils"
+import { formatPrice } from "@/lib/utils"
 import type { CartItem } from "@/types"
 
 interface CheckoutSummaryProps {
