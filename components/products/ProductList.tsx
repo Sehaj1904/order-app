@@ -1,4 +1,4 @@
-import { getAllProducts } from "@/lib/Products"
+import { getAllProducts } from "@/lib/products"
 import ProductCardWithAction from "@/components/products/ProductCardWithAction"
 
 export default async function ProductList() {
