@@ -1,4 +1,4 @@
-import { getAllCourses } from "@/lib/Courses"
+import { getAllCourses } from "@/lib/courses"
 import CourseCard from "@/components/courses/CourseCard"
 
 export default async function CourseList() {
