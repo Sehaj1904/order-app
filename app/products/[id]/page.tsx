@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ProductDetails from "@/components/products/ProductDetails";
-import { getProductById, getAllProducts } from "@/lib/Products";
+import { getProductById, getAllProducts } from "@/lib/products";
 
 interface ProductPageProps {
   params: {
